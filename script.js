@@ -27,7 +27,7 @@ verifyBtn.addEventListener("mouseenter", () => {
 wrongBtn.addEventListener("click", () => {
 
   message.textContent =
-    "Wrong verify button. Please click the button that says DO NOT VERIFY.";
+    "Wrong verify button. Please click the button that says DO NOT TOUCH.";
 
 });
 
@@ -87,7 +87,7 @@ function startLoading() {
     loadingText.textContent = "100%";
 
     message.textContent =
-      "✅ Congratulations. You are probably human.";
+      "✅ Congratulations. You are probably not a refrigerator but might be a human.";
 
   }, 4000);
 
