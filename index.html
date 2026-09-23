@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goofy Captcha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="captcha-card">
+    <div class="top-bar">
+      <h1>Goofy Captcha</h1>
+      <span>Bad UI / Goofy UI</span>
+    </div>
+
+    <h2>prove you are human</h2>
+
+    <p>
+      Please complete this extremely advanced security test.
+    </p>
+
+    <div class="question-box">
+      <p>What is 2 + 2?</p>
+
+      <input
+        id="answer"
+        type="text"
+        placeholder="Definitely don't type 4"
+      />
+    </div>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="humanCheck" />
+      <label for="humanCheck">
+        I am probably not a refrigerator
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button id="verifyBtn">
+        DO NOT VERIFY
+      </button>
+
+      <button id="wrongBtn">
+        Verify
+      </button>
+    </div>
+
+    <p id="message"></p>
+
+    <div id="loadingArea" class="hidden">
+      <p>Checking your humanity...</p>
+
+      <div class="loading-bar">
+        <div id="loading"></div>
+      </div>
+
+      <p id="loadingText">0%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
