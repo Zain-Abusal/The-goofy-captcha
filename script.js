@@ -38,15 +38,20 @@ verifyBtn.addEventListener("click", () => {
   if (answer.value !== "4") {
 
     message.textContent =
-      "Robot detected because apparently 2 + 2 is difficult.";
+      "Robot detected because apparently 2 + 2 is just too hard.";
 
+    return;
+  }
+  if (answer.value === "2") {
+    message.textContent =
+      "It appears you are a human who hasn't fully graduated kindergarden yet.";
     return;
   }
 
   if (!humanCheck.checked) {
 
     message.textContent =
-      "Please confirm you are not a refrigerator.";
+      "Please confirm you are not a active running refrigerator.";
 
     return;
   }
